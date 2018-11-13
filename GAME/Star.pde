@@ -5,9 +5,9 @@ class Star {
     y = random(2*height);
   }
   public void update() {
-    y -= 2;
-    if (y < 0) {
-      y = random(height,2*height);
+    y += 2;
+    if (y > height) {
+      y = random(-2*height);
     }
   }
   public void display() {
